@@ -8,7 +8,7 @@ In this project, I will create a pipeline ingesting a csv file, Grouping the dat
 
 
 # Installation
-At the date of this article Apache Beam (2.8.1) is only compatible with Python 2.7, however a Python 3 version should be available soon. If you have python-snappy installed, Beam may crash. This issue is known and will be fixed in Beam 2.9.
+At the date of this article Apache Beam SDK is only compatible with Python 2.7, however a Python 3 version should be available soon. If you have python-snappy installed, Beam may crash. This issue is known and will be fixed in Beam 2.9.
 
 ```
 pip install apache-beam 
