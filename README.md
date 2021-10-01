@@ -10,10 +10,8 @@ In this project, I will create a pipeline ingesting a csv file, Grouping the dat
 # Installation
 At the date of this article Apache Beam (2.8.1) is only compatible with Python 2.7, however a Python 3 version should be available soon. If you have python-snappy installed, Beam may crash. This issue is known and will be fixed in Beam 2.9.
 
-<html>
-          <head>
-            <title>pip install apache-beam</title>
-          </head>
+`pip install apache-beam `
+
 
 # Data
 This public dataset is part of Airbnb, and the original source can be found on their website. Since 2008, guests and hosts have used Airbnb to expand on traveling possibilities and present more unique, personalized way of experiencing the world. This dataset describes the listing activity and metrics in NYC, NY for 2019.
