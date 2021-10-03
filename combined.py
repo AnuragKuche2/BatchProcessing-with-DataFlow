@@ -18,7 +18,7 @@ BUCKET=''
 def run():
     argv = [
     '--project={0}'.format(PROJECT),
-    '--job_name=examplejob2',
+    '--job_name=dataflowjob2',
     '--save_main_session',
     '--staging_location=gs://{0}/staging/'.format(BUCKET),
     '--temp_location=gs://{0}/staging/'.format(BUCKET),
@@ -26,8 +26,8 @@ def run():
     '--runner=DataflowRunner']
 
     p = beam.Pipeline(argv=argv)
-    input_file = 'gs://$BUCKET/AB_NYC_2019.csv'
-    output_file = 'gs://$BUCKET/output'
+    input_file = 'gs://{0}/AB_NYC_2019.csv'.format(BUCKET)
+    output_file = 'gs://{0}/output'.format(BUCKET)
 
     (p
     | beam.io.ReadFromText(input_file, skip_header_lines=True)
